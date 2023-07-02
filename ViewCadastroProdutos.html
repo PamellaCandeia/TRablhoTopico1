@@ -6,6 +6,8 @@
         <link rel="stylesheet" type="text/css" href="estilo.css">
         <script src="jquery-3.6.4.min.js"></script> 
         <script src="produtoDAO.js"></script> 
+        <script src="produto.js"></script> 
+        <script src="produtoControler.js"></script> 
     
     </HEAD>
     <BODY>
@@ -49,7 +51,7 @@
     <p><br>
 
     <div align="center" border="bolder" padding="2px">
-        <form action="../controlers/controlerProduto.php" method="get" align="center">
+        <!-- //<form  align="center"> -->
             Imagem: <input type="file" size="20" name="imagemP" accept="image/*"><br><br>
             <div id="imagemDoProduto"></div>
             Código: <input type="text" size="20" name="codigo"><br><br>
@@ -59,11 +61,8 @@
            
             <br><br>
 
-            <input type="hidden" name="opcao" value="1"><p></p>
-
             <p><input type="submit" value="Cadastrar">
-            <input type="reset" value="Cancelar">
-        </form>
+        <!-- </form> -->
     </div>
 
     
