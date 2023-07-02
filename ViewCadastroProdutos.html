@@ -1,0 +1,74 @@
+
+<HTML>
+    <HEAD>
+     <TITLE>Loja Virtual Desweb</TITLE>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+        <script src="jquery-3.6.4.min.js"></script> 
+        <script src="produtoDAO.js"></script> 
+    
+    </HEAD>
+    <BODY>
+    <div class="topo">
+    <img src="imagens/capa12.png">
+    </div>
+    
+    <div class="barra">
+    <nav>
+    <ul class="menu">
+      <li><a href="index.php">Home</a></li>
+      <li><a href="#">Quem somos?</a></li>
+      <li><a href="#">Clientes</a>
+              <ul>
+                      <li><a href="#">Cadastrar</a></li>
+                      <li><a href="#">Consultar Todos</a></li>
+              </ul>
+        </li>
+        <li><a href="#">Produtos</a>
+                <ul>
+                      <li><a href="../controlers/controlerfabricante.php?opcao=2">Cadastrar</a></li>
+                      <li><a href="#">Cadastrar Vários</a>
+                      <li><a href="../controlers/controlerProduto.php?opcao=2">Consultar Todos</a>
+                      <li><a href="#">Paginação</a>
+                </ul>
+          </li>
+          <li><a href="#">Vendas</a>
+                  <ul>
+                          <li><a href="../controlers/controlerProduto.php?opcao=6">Relação de produtos</a></li>
+                          <li><a href="../controlers/controlerCarrinho.php?opcao=4">Ver carrinho</a></li>
+                          <li><a href="../controlers/controlerCarrinho.php?opcao=3">Esvaziar carrinho</a></li>
+                  </ul>
+            </li>
+      <li><a href="contato.php">Contato</a></li>
+      <li><a href="../views/fomrLoginCliente.php">Login</a></li>
+    </ul>
+    </nav>
+    </div>
+    </div align="center">
+    <h2 align="center">Cadastro de Produto</h2>
+    <p><br>
+
+    <div align="center" border="bolder" padding="2px">
+        <form action="../controlers/controlerProduto.php" method="get" align="center">
+            Imagem: <input type="file" size="20" name="imagemP" accept="image/*"><br><br>
+            <div id="imagemDoProduto"></div>
+            Nome do Produto: <input type="text" size="20" name="nome"><br><br>
+            Descrição: <input type="text" size="20" name="descricao"><br><br>
+            Preço: <input type="text" size="20" name="preco"><br><br>
+           
+            <br><br>
+
+            <input type="hidden" name="opcao" value="1"><p></p>
+
+            <p><input type="submit" value="Cadastrar">
+            <input type="reset" value="Cancelar">
+        </form>
+    </div>
+
+    
+
+
+
+</div>
+</body>
+</html>
